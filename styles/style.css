@@ -26,7 +26,7 @@ main {
   align-items: stretch;
   width: 100%;
   max-width: 100rem;
-  background-color: var(--light-blue);
+  background-color: var(--white);
   border-radius: 3rem;
   text-transform: uppercase;
   /* gap: 1.5rem; */
@@ -52,6 +52,7 @@ main {
 .pricing-header {
   font-family: "IBM Plex Serif", serif;
   font-size: 2.5rem;
+  color: var(--blue);
 }
 .pricing-img {
   max-width: 30%;
@@ -84,11 +85,13 @@ main {
   border: 0.1rem solid var(--blue);
   padding: 1rem 3rem;
   border-radius: 1.5rem;
-  transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out, color 100ms linear;
   margin-top: 1rem;
+  color: var(--blue);
 }
 .pricing-button:hover {
   background-color: var(--blue);
+  color: var(--white);
 }
 footer {
   height: 10%;
@@ -129,3 +132,4 @@ footer {
     align-items: center;
   }
 }
+/* TODO: Landscape media queries */
